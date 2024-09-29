@@ -47,6 +47,13 @@ void MyString::MyStrCat(MyString& b)
 
 void MyString::MyDelChr(char c)
 {
+	size_t newLength = 0;
+	for (size_t i = 0; i < size; i++) {
+		if (str[i] != c) {
+			str[newLength++] = str[i];
+		}
+	}
+	size = newLength;
 }
 
 MyString::~MyString()
