@@ -18,11 +18,14 @@ MyString::MyString(char* userStr)
 {
 	size = strlen(userStr);
 	str = new char[size + 1];
-	strcpy_s(str1, size + 1, userStr);
+	strcpy_s(str, size + 1, userStr);
 }
 
 MyString::MyString(const MyString& obj)
 {
+	size = obj.size;
+	str = new char[size + 1];
+	strcpy_s(str, size + 1, obj.str);
 }
 
 int MyString::MyStrLen()
