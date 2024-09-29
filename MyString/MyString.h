@@ -5,7 +5,7 @@ class MyString
 	int size;
 public:
 	MyString(); //строка в 80 символов
-	MyString(const char* str); //строка произвольного размера
+	MyString(int size); //строка произвольного размера
 	MyString(const char* userStr); //инициализация строкой пользователя
 	MyString(const MyString& obj); //копирование строк
 	void Input();

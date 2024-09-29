@@ -6,7 +6,13 @@ MyString::MyString()
 	str = new char[size + 1];
 }
 
-MyString::MyString(const char* str)
+MyString::MyString(int size)
+{
+	size = size;
+	str = new char[size + 1];
+}
+
+MyString::MyString(const char* userStr)
 {
 }
 
