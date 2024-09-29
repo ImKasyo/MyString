@@ -35,6 +35,14 @@ int MyString::MyStrLen()
 
 void MyString::MyStrCat(MyString& b)
 {
+	size_t newLength = size + b.size;
+	char* newStr = new char[newLength + 1];
+	strcpy_s(newStr, size + 1, str);
+	strcat_s(newStr, newLength + 1, b.str);
+
+	delete[] str;
+	str = newStr;
+	size = newLength;
 }
 
 void MyString::MyDelChr(char c)
