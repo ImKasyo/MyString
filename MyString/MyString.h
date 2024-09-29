@@ -2,11 +2,12 @@
 class MyString
 {
 	const char* str;
+	char* str1;
 	int size;
 public:
 	MyString(); //строка в 80 символов
 	MyString(int size); //строка произвольного размера
-	MyString(const char* userStr); //инициализация строкой пользователя
+	MyString(char* userStr); //инициализация строкой пользователя
 	MyString(const MyString& obj); //копирование строк
 	void Input();
 	void Print();
