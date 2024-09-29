@@ -1,8 +1,7 @@
 #pragma once
 class MyString
 {
-	const char* str;
-	char* str1;
+    char* str;
 	int size;
 public:
 	MyString(); //строка в 80 символов
