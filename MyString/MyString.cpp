@@ -2,6 +2,8 @@
 
 MyString::MyString()
 {
+	size = 80;
+	str = new char[size + 1];
 }
 
 MyString::MyString(const char* str)
