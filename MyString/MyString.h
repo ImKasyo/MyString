@@ -4,15 +4,16 @@ class MyString
 	const char* str;
 	int size;
 public:
-	MyString();
-	MyString(const char* str);
-	MyString(const char* userStr);
-	MyString(const MyString& obj);
+	MyString(); //строка в 80 символов
+	MyString(const char* str); //строка произвольного размера
+	MyString(const char* userStr); //инициализация строкой пользователя
+	MyString(const MyString& obj); //копирование строк
 	void Input();
 	void Print();
-	MyString(const MyString& str);
-	int MyStrLen();
-	void MyStrCat(MyString& b);
+	MyString(const MyString& str); //поиск строки в подстроке
+	int MyStrLen(); //возвращает длину строки
+	void MyStrCat(MyString& b); //обьединение строк
+	void MyDelChr(char c); //удаляет указанный символ
 	~MyString();
 };
 
