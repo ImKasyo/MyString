@@ -1,9 +1,12 @@
 #pragma once
 class MyString
 {
-	char* str;
+	const char* str;
 	int size;
 public:
-
+	MyString() {
+		size = 80;
+		str = new char[size + 1];
+	}
 };
 
