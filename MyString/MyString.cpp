@@ -30,7 +30,7 @@ MyString::MyString(const MyString& obj)
 
 int MyString::MyStrLen()
 {
-	return 0;
+	return strlen(str);
 }
 
 void MyString::MyStrCat(MyString& b)
