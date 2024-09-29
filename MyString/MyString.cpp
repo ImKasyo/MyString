@@ -63,8 +63,11 @@ MyString::~MyString()
 
 void MyString::Input()
 {
+	cout << "Enter a string: ";
+	cin.getline(str, size + 1);
 }
 
 void MyString::Print()
 {
+	cout << str << endl;
 }
