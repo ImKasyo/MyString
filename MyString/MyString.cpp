@@ -1,4 +1,6 @@
 #include "MyString.h"
+#include <iostream>
+using namespace std;
 
 MyString::MyString()
 {
@@ -14,6 +16,9 @@ MyString::MyString(int size)
 
 MyString::MyString(const char* userStr)
 {
+	size = strlen(userStr);
+	str = new char[size + 1];
+	strcpy_s(str, size + 1, userStr);
 }
 
 MyString::MyString(const MyString& obj)
