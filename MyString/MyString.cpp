@@ -58,6 +58,7 @@ void MyString::MyDelChr(char c)
 
 MyString::~MyString()
 {
+	delete[] str;
 }
 
 void MyString::Input()
