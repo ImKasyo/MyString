@@ -1,5 +1,6 @@
 #include "MyString.h"
 #include <iostream>
+#include <initializer_list>
 using namespace std;
 
 MyString::MyString()
@@ -54,6 +55,17 @@ void MyString::MyDelChr(char c)
 		}
 	}
 	size = newLength;
+}
+
+MyString::MyString(initializer_list<int> a)
+{
+	size = a.size();
+	str = new char[size];
+	for (auto x = a.begin(); x != a.end(); x++) {
+		*str = *x;
+		str++;
+	}
+	str -= size;
 }
 
 MyString::~MyString()

@@ -14,6 +14,7 @@ public:
 	int MyStrLen(); //возвращает длину строки
 	void MyStrCat(MyString& b); //обьединение строк
 	void MyDelChr(char c); //удаляет указанный символ
+	MyString(initializer_list <int> a);
 	~MyString();
 };
 
